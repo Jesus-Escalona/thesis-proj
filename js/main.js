@@ -6,3 +6,8 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+window.onscroll = () => {
+  if(this.scrollY >= 10) x.classList.add('down');
+  else x.classList.remove('down');
+};

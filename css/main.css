@@ -168,12 +168,18 @@ h1 {
 }
 
 .topnav {
+  box-sizing: border-box;
   background-color: transparent;
+  width: 100vw;
   padding: 1rem;
   overflow: hidden;
   position: fixed;
-  width: 90vw;
   top: 0;
+  left: 0;
+}
+
+.down {
+  background-color: #7436CD;
 }
 
 #navBrand {
