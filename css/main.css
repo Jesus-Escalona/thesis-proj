@@ -102,9 +102,308 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Add a black background color to the top div */
+/*, #7372DC 80% */
+.topDiv {
+  display: flex;
+  background-image: linear-gradient( 170deg, #7436CD, #7436CD 15%, #744ED4 15%, #744ED4 60%, #7372DC 60%, #7372DC 75%, white 75%);
+  height: 580px;
+  justify-content: center;
+}
 
 
 
+.login {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #84D29A;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input {
+  margin: 5px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  width: 12rem;
+  font-size: small;
+}
+
+#searchButton {
+  margin: 5px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #84D29A;
+  font-size: small;
+}
+
+.green {
+  color: #84D29A;
+}
+
+.topnav {
+  background-color: transparent;
+  padding: 1rem;
+  overflow: hidden;
+  position: fixed;
+  width: 90vw;
+  top: 0;
+}
+
+#navBrand {
+  font-size: medium;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: small;
+}
+
+#scrollButton {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: #84D29A;
+  font-size: large;
+  height: 50px;
+  width: 50px;
+}
+
+.scrollBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  font-size: small;
+  align-items: center;
+  color: white
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: whitesmoke;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav-right a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a {
+    color: #555555;
+    display: block;
+  }
+}
+
+.accounts {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.midDiv {
+  background-image: linear-gradient( 170deg, white, white 65%, #F6F9FC 65%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+}
+
+p {
+  color: #555555;
+}
+
+.paragraph {
+  text-align: center;
+  max-width: 500px;
+  font-size: small;
+  color: #555555;
+}
+
+.accountButton {
+  margin: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #7372DC;
+  font-size: x-small;
+}
+
+#contact {
+  color: #744ED4;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr {
+  margin-top: -10px;
+  border: none;
+  height: 2px;
+  background-color: #222222;
+}
+
+.servicesBox {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  background-color: #F6F9FC;
+}
+
+.serviceName {
+  margin: 0;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: x-small;
+}
+
+.writing {
+  display: flex;
+  font-size: small;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+img {
+  margin-left: -20px;
+  width: 80px;
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 80px;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #7372DC;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.info > p {
+  font-size: small;
+  color: white;
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ready {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.h5 {
+  color: white;
+  margin: 5px;
+}
+
+#kk {
+  margin: 5px;
+  color: #7372DC;
+}
+
+#ll {
+  margin: 5px;
+  color: #744ED4;
+}
 
 
 

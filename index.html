@@ -10,28 +10,141 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+<!-- Add your site or application content here -->
+<div class="topnav" id="myTopnav">
+  <a id="navBrand" href="/">MyWebNow</a>
+  <div class="topnav-right">
+    <a href="#home">Home</a>
+    <a href="#whyus">Why Us</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#support">Support</a>
+    <a class="login" href="#support">SignUp</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-  <script src="js/main.js"></script>
+</div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
+<div class="topDiv">
+  <div class="hero">
+    <div class="title">
+      <h1>Get a website in<br>15 minutes <span class="green">or less</span></h1>
+    </div>
+    <div class="searchBar">
+      <input id="input" placeholder="Write your domain name here...">
+      <button id="searchButton">Search</button>
+    </div>
+    <div class="scrollBox">
+      <h3>LEARN HOW WE CAN ENHANCE YOUR BUSINESS</h3>
+      <button id="scrollButton"><i class="fa fa-arrow-down"></i></button>
+    </div>
+  </div>
+</div>
+
+<div class="midDiv">
+  <div class="paragraph">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <button class="accountButton">CREATE YOUR ACCOUNT</button>
+  <div class="servicesBox">
+    <p>Our Services</p>
+    <hr width="50px">
+    <div class="services">
+      <div class="card">
+        <img src="https://cdn3.iconfinder.com/data/icons/seo-and-internet-marketing/70/1-09-512.png" alt="web hosting"/>
+        <div class="writing">
+          <h5 class="serviceName">WEB HOSTING <i class="fa fa-arrow-right"></i></h5>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn1.iconfinder.com/data/icons/web-hosting-3-2/32/Resellers-512.png" alt="web hosting"/>
+        <div class="writing">
+          <h5 class="serviceName">RESELLERS <i class="fa fa-arrow-right"></i></h5>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn0.iconfinder.com/data/icons/web-app-essential-set/100/IF-18-512.png" alt="web hosting"/>
+        <div class="writing">
+          <h5 class="serviceName">VPS HOSTING <i class="fa fa-arrow-right"></i></h5>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn0.iconfinder.com/data/icons/coding-files-icons-rounded/110/Database-Cloud-512.png" alt="web hosting"/>
+        <div class="writing">
+          <h5 class="serviceName">CLOUD HOSTING <i class="fa fa-arrow-right"></i></h5>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accounts">
+    <div class="ready">
+      <h4 id="kk">Are you ready?</h4>
+      <h4 id="ll">create an account, or contact us</h4>
+    </div>
+    <div class="buttons">
+      <button class="accountButton">CREATE YOUR ACCOUNT</button>
+      <button class="accountButton" id="contact">CONTACT US</button>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="info">
+    <h5 class="h5"><i class="fa fa-phone"> </i>   + 1 800 WEBSITE</h5>
+    <p><i class="fa fa-envelope"> </i>   hello@mywebnow.com</p>
+    <p><i class="fa fa-map-marker"> </i>   1 Main St<br>   Floor 6,<br>   New York, NY 10005</p>
+  </div>
+  <div class="info">
+    <h5 class="h5">Company</h5>
+    <p>About us</p>
+    <p>News</p>
+    <p>FAQ</p>
+    <p>Contact Us</p>
+  </div>
+  <div class="info">
+    <h5 class="h5">Services</h5>
+    <p>Web Hosting</p>
+    <p>Cloud Hosting</p>
+    <p>VPS Services</p>
+    <p>Domain Name</p>
+  </div>
+  <div class="info">
+    <h5 class="h5">Others</h5>
+    <p>Transfer Domains</p>
+    <p>Customer Portal</p>
+    <p>Support Portal</p>
+    <p>Video Tutorials</p>
+  </div>
+  <div class="info">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
 </body>
 
 </html>
